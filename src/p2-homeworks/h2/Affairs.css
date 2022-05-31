@@ -1,0 +1,11 @@
+.priority_high {
+    color: red;
+}
+
+.priority_middle {
+    color: coral;
+}
+
+.priority_low {
+    color: aquamarine;
+}

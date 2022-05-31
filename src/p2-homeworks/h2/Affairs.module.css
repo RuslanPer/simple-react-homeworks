@@ -1,3 +1,40 @@
-.someClass {
+.affairsWrap {
+    padding: 30px;
+    background-color: #232626;
+}
 
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    cursor: pointer;
+    width: 80px;
+    height: 34px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgba(37, 99, 235);
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.affairs {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-gap: 10px;
+    color: white;
+}
+
+.affairBtnDelete {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(37, 99, 235);
+    border: none;
+    color: white;
 }
