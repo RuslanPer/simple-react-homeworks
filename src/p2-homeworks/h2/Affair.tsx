@@ -1,7 +1,6 @@
 import React from 'react'
 import {AffairType} from './HW2'
 import s from './Affairs.module.css'
-import './Affairs.css'
 
 type AffairPropsType = {
     affair: AffairType
@@ -13,10 +12,12 @@ function Affair(props: AffairPropsType) {
         props.deleteAffairCallback(props.affair._id)
     }
 
+    const priorityColor = props.affair.priority === 'high' ? s.high : props.affair.priority === 'middle' ? s.middle : props.affair.priority === 'low' ? s.low : ''
+
     return (
         <>
             <span className={s.affairName}>{props.affair.name}</span>
-            <span className={'priority_' + props.affair.priority}>
+            <span className={priorityColor}>
                 [{props.affair.priority}]
             </span>
             <button className={s.affairBtnDelete} onClick={deleteCallback}>X</button>
