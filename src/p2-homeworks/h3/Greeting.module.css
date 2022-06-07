@@ -1,7 +1,45 @@
-.someClass {
+.inputWrap {
+    padding: 30px;
+    background-color: #232626;
+    color: white;
+}
 
+.input {
+    margin-right: 10px;
+    padding: 5px;
+    width: 200px;
+    height: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #333333;
+    color: white;
 }
 
 .error {
     border: 1px solid red;
 }
+
+.errorText {
+    margin-top: 5px;
+    display: block;
+    color: red;
+}
+
+.buttonAdd {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: rgba(37, 99, 235);
+    border: none;
+    border-radius: 5px;
+}
+
+.buttonAdd:disabled {
+    cursor: auto;
+    background-color: #333333;
+    color: rgba(255, 255, 255, 0.50);
+}
+
