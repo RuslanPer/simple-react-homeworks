@@ -7,19 +7,15 @@ type GreetingPropsType = {
     addUser: (name: string) => void
     error: string
     totalUsers: number
+    onKeyDownHandler: (event: KeyboardEvent<HTMLInputElement>) => void
 }
 
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers}
+    {name, onKeyDownHandler, setNameCallback, addUser, error, totalUsers}
 ) => {
     const inputClass = error === '' ? s.input : s.input + ' ' + s.error
     const buttonDisabled = error !== ''
 
-    const onKeyDownHandler = (event: KeyboardEvent<HTMLInputElement>) => {
-        if (event.key === 'Enter') {
-            addUser(name)
-        }
-    }
 
     return (
         <div className={s.inputWrap}>
