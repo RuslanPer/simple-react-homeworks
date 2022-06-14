@@ -1,7 +1,20 @@
 .checkbox {
-
+    width: 20px;
+    height: 20px;
+    accent-color: rgba(37, 99, 235);
 }
 
 .spanClassName {
-
+    margin-left: 5px;
 }
+
+.checkboxLabel {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+

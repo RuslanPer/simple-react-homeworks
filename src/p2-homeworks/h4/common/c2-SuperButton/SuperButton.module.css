@@ -1,7 +1,32 @@
 .default {
+    margin-top: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.25rem;
+    border: none;
+    border-radius: 0.375rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: rgba(37, 99, 235);
+    font-size: 15px;
+    color: rgba(255, 255, 255);
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
 
+.default:hover {
+    opacity: 0.8;
+}
+
+.default:disabled {
+    background-color: #eaeaea;
+    color: #666;
+    opacity: 0.5;
 }
 
 .red {
-    background: red;
+    background-color: rgba(254, 226, 226);
+    color: rgba(239, 68, 68);
 }
