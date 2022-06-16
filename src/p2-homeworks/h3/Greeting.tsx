@@ -4,7 +4,7 @@ import s from './Greeting.module.css'
 type GreetingPropsType = {
     name: string
     setNameCallback: (event: ChangeEvent<HTMLInputElement>) => void
-    addUser: (name: string) => void
+    addUser: () => void
     error: string
     totalUsers: number
     onKeyDownHandler: (event: KeyboardEvent<HTMLInputElement>) => void
@@ -14,7 +14,6 @@ const Greeting: React.FC<GreetingPropsType> = (
     {name, onKeyDownHandler, setNameCallback, addUser, error, totalUsers}
 ) => {
     const inputClass = error === '' ? s.input : s.input + ' ' + s.error
-    const buttonDisabled = error !== ''
 
 
     return (
@@ -23,8 +22,8 @@ const Greeting: React.FC<GreetingPropsType> = (
                    onChange={setNameCallback}
                    onKeyDown={onKeyDownHandler}
                    className={inputClass}/>
-            <button onClick={() => addUser(name)}
-                    disabled={buttonDisabled}
+            <button onClick={addUser}
+                    disabled={!name}
                     className={s.buttonAdd}>add
             </button>
             <span>{totalUsers}</span>

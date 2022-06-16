@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto:wght@400;500&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #232626;
+    font: 16px/1.4 'Roboto', sans-serif;
+    background: #F9FAFB;
     padding: 1rem;
-    color: white;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 15px;
+    line-height: 27px;
 }

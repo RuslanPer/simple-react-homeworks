@@ -2,7 +2,6 @@
     display: flex;
     align-items: flex-end;
     padding: 30px;
-    background-color: #232626;
 }
 
 .avatar img {
@@ -15,8 +14,7 @@
 .message {
     border-radius: 6px 6px 6px 0;
     padding: 12px 40px 12px 18px;
-    font-size: 15px;
-    background-color: #333333;
+    background-color: #2a41e8;
     color: white;
     position: relative;
 }
@@ -29,11 +27,11 @@
     display: block;
     width: 15px;
     height: 15px;
-    background: radial-gradient(30px at top left, transparent 49%, #333333 51%) no-repeat right bottom;
+    background: radial-gradient(30px at top left, transparent 49%, #2a41e8 51%) no-repeat right bottom;
 }
 
 .messageName {
-    color: #2563eb;
+    color: #fff;
 }
 
 .messageText {
@@ -45,7 +43,7 @@
 
 .messageTime {
     position: absolute;
-    right: 5px;
+    right: 8px;
     bottom: 5px;
     font-size: 13px;
     opacity: 0.6;

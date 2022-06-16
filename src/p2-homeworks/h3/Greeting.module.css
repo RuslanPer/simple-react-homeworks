@@ -1,44 +1,74 @@
 .inputWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
     padding: 30px;
-    color: white;
 }
 
 .input {
-    margin-right: 10px;
-    padding: 5px;
-    width: 200px;
-    height: 20px;
+    width: 300px;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
     outline: none;
-    border-radius: 5px;
+    font-size: 15px;
+    color: #808080;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #fff;
+    font-weight: 400;
+    opacity: 1;
+    border-radius: 6px;
     border: none;
-    background: #333333;
-    color: white;
 }
 
 .error {
-    border: 1px solid red;
+    border: 1px solid rgba(239, 68, 68);
 }
 
 .errorText {
-    margin-top: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
     display: block;
-    color: red;
+    color: rgba(239, 68, 68);
 }
 
 .buttonAdd {
-    margin-right: 10px;
-    cursor: pointer;
-    width: 80px;
-    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.25rem;
+    padding: 0 1.25rem;
     color: #fff;
-    background-color: rgba(37, 99, 235);
-    border: none;
     border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5),
+    7px 7px 20px 0 rgba(0, 0, 0, .1),
+    4px 4px 5px 0 rgba(0, 0, 0, .1);
+    outline: none;
+    background: rgba(37, 99, 235);
+    border: none;
+}
+
+.buttonAdd:hover:not(:disabled) {
+    background: rgba(2, 126, 251, 1);
 }
 
 .buttonAdd:disabled {
     cursor: auto;
-    background-color: #333333;
-    color: rgba(255, 255, 255, 0.50);
+    background-color: #eaeaea;
+    color: #666;
+    opacity: 0.5;
+}
+
+.buttonAdd:active:not(:disabled) {
+    top: 2px;
 }
 

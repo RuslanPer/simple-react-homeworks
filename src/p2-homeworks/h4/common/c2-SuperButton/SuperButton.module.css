@@ -1,32 +1,45 @@
 .default {
-    margin-top: 7px;
-    cursor: pointer;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 2.25rem;
-    border: none;
-    border-radius: 0.375rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    background-color: rgba(37, 99, 235);
-    font-size: 15px;
-    color: rgba(255, 255, 255);
+    padding: 0 1.25rem;
+    color: #fff;
+    border-radius: 5px;
     font-weight: 500;
-    transition: all 0.2s ease-in-out;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5),
+    7px 7px 20px 0 rgba(0, 0, 0, .1),
+    4px 4px 5px 0 rgba(0, 0, 0, .1);
+    outline: none;
+    background: rgba(37, 99, 235);
+    border: none;
 }
 
-.default:hover {
-    opacity: 0.8;
+.default:hover:not(:disabled) {
+    background: rgba(2, 126, 251, 1);
 }
 
 .default:disabled {
+    cursor: auto;
     background-color: #eaeaea;
     color: #666;
     opacity: 0.5;
 }
 
+.default:active:not(:disabled) {
+    top: 2px;
+}
+
 .red {
-    background-color: rgba(254, 226, 226);
+    background: rgba(254, 226, 226);
     color: rgba(239, 68, 68);
+}
+
+.red:hover {
+    background: transparent !important;
+    box-shadow: none;
 }
