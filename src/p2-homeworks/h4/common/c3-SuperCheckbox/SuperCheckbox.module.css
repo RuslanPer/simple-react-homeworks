@@ -1,7 +1,41 @@
 .checkbox {
+    position: relative;
+    appearance: none;
+    cursor: pointer;
     width: 20px;
     height: 20px;
-    accent-color: rgba(37, 99, 235);
+    background-color: #fff;
+    border: 1px solid rgba(229, 231, 235);
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+.checkbox:after {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: scale(0.5) rotate(45deg);
+    transition: all 0.35s cubic-bezier(0.3, -0.41, 0.19, 2), opacity 0.3s;
+}
+
+.checkbox:checked {
+    appearance: none;
+    border-color: #2a41e8;
+    background-color: #2a41e8;
+}
+
+.checkbox:checked:after {
+    transform: scale(1) rotate(45deg);
+    opacity: 1;
 }
 
 .spanClassName {
