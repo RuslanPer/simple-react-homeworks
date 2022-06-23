@@ -1,0 +1,68 @@
+.linkContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 85px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 15px 15px 15px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translateX(-85%);
+    transition: .2s linear;
+    opacity: 1;
+}
+
+.menu:hover {
+    overflow: hidden;
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 10;
+}
+
+
+.link a {
+    display: block;
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 4px;
+    font-size: 16px;
+    color: #585757;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link a:hover {
+    background-color: #F3F4F6;
+}
+
+.link a.activeLink {
+    background-color: rgba(42, 65, 232, 0.07);
+    color: #2a41e8;
+}
+
+.btn {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(37, 99, 235);
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5),
+    7px 7px 20px 0 rgba(0, 0, 0, .1),
+    4px 4px 5px 0 rgba(0, 0, 0, .1);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(2, 126, 251, 1);
+}
