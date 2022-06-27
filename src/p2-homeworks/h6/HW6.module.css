@@ -1,0 +1,10 @@
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.superInput {
+    padding: 10px 0;
+}
