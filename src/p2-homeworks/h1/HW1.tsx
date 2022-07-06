@@ -14,7 +14,6 @@ function HW1() {
             <hr/>
             homeworks 1
 
-            {/*should work (должно работать)*/}
 
             <div>
                 <Message
@@ -26,9 +25,6 @@ function HW1() {
             </div>
 
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
             <hr/>
         </div>
     )

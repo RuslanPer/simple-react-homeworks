@@ -19,7 +19,6 @@ function HW6() {
             <hr/>
             homeworks 6
 
-            {/*should work (должно работать)*/}
             <div className={styles.superInput}>
                 <SuperEditableSpan
                     value={value}
@@ -33,9 +32,7 @@ function HW6() {
             </div>
 
             <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperEditableSpan/>*/}
-            <hr/>
+
         </div>
     )
 }
