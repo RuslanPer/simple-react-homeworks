@@ -1,0 +1,14 @@
+.users {
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 10px;
+}
