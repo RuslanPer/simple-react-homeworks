@@ -1,0 +1,14 @@
+.buttons {
+    display: flex;
+    column-gap: 10px;
+}
+
+.date {
+    height: 25px;
+}
+
+.time {
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
